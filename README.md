@@ -1,6 +1,16 @@
 # Godot, programación orgánica
-Serie de tutoriales para la introducción a la programación orgánica con Godot. Mediante el uso de algoritmo generativos verás la forma de crear paisajes y escenarios con apariencia natural
+Serie de tutoriales para la introducción a la programación orgánica con Godot. Mediante el uso de algoritmo generativos verás la forma de crear paisajes y escenarios con apariencia natural.
 
+## Temas
+### 00 Aleatoriedad
+<https://github.com/programautas/godot-programacion-organica/tree/main/projects/00_aleatoriedad>
+Es un concepto que refiere a la ocurrencia de eventos que no tienen una causa predecible o un patrón definido, por el contrario de las experiencias deterministas que afirman qeu cada evento es rastreable a un origen específico. En la práctica, aunque un fenómeno sea macroscópicamente determinista, si el resultado es muy dificil de predecir lo consideramos aleatorio. El término aleatoriedad se utiliza para referirse a propiedades estadísticas medibles como la ausencia de tendencias, patrones o correlaciones.
+#### Generador lineal congruencial
+Cuando hablamos de generación de números al azar decimos que son pseudoaleatorios porque en realidad producen una sucesión de valores que pueden ser predichos por su estado, pero que tienen una variación y frecuencia que sirven para simular una secuencia aparentemente aleatoria.
+El generador lineal congruencial es una de las primeras técnicas usadas en informática para crear este tipo de secuencias pseudoaleatorias, es reconocido por su sencillez y rapidez de cálculo. A la vez que logra una buena sucesión de números con una imprevisibilidad aceptable.
+#### Distribución uniforme
+Para evaluar si una secuencia de números pseudoaleatorios es buena tiene que cumplir las premisas de la distribución uniforme. Es decir que cada valor posible tenga la misma frecuencia de ocurrencia.
+Más sencillo si tengo cuatro resultados posibles y genero una secuencia de cien valores, idealmente cada uno debería aparecer veinte y cinco veces. De esta manera cumpliría con la probabilidad que cada valor tiene una chance de salir igual a 1/n, donde n es la cantidad de resultados posibles.
 
 
 ## ⚖️ Aviso Legal y Licencia (Legal Disclaimer)
