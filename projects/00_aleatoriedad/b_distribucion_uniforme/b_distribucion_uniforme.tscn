@@ -1,0 +1,255 @@
+[gd_scene load_steps=3 format=3 uid="uid://e41mhy0mawx2"]
+
+[ext_resource type="Script" uid="uid://xmxwtiwhvqgk" path="res://b_distribucion_uniforme/b_distribucion_uniforme.gd" id="1_ybhew"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ompfq"]
+bg_color = Color(0.243137, 0.243137, 0.243137, 1)
+
+[node name="b-distribucion_uniforme" type="Node2D"]
+script = ExtResource("1_ybhew")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="LabelMuestras" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.444
+anchor_top = 0.148
+anchor_right = 0.556
+anchor_bottom = 0.21
+offset_top = 96.0
+offset_bottom = 96.0
+text = "Muestras"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TEMuestras" type="TextEdit" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.444
+anchor_top = 0.235
+anchor_right = 0.556
+anchor_bottom = 0.309
+offset_left = -0.488037
+offset_top = 103.72
+offset_right = -0.512085
+offset_bottom = 95.768
+text = "100"
+autowrap_mode = 1
+
+[node name="ButtonComparar" type="Button" parent="CanvasLayer"]
+offset_left = 512.0
+offset_top = 488.0
+offset_right = 640.0
+offset_bottom = 536.0
+text = "Comparar
+"
+
+[node name="LabelGLC" type="Label" parent="CanvasLayer"]
+offset_left = 32.0
+offset_top = 48.0
+offset_right = 432.0
+offset_bottom = 112.0
+text = "Generador lineal
+Congruencial"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="pbs_glc" type="Node" parent="CanvasLayer"]
+
+[node name="pb_glc1" type="ProgressBar" parent="CanvasLayer/pbs_glc"]
+offset_left = 24.0
+offset_top = 128.0
+offset_right = 80.0
+offset_bottom = 411.0
+fill_mode = 3
+
+[node name="pb_glc2" type="ProgressBar" parent="CanvasLayer/pbs_glc"]
+offset_left = 96.0
+offset_top = 128.0
+offset_right = 152.0
+offset_bottom = 411.0
+fill_mode = 3
+
+[node name="pb_glc3" type="ProgressBar" parent="CanvasLayer/pbs_glc"]
+offset_left = 168.0
+offset_top = 128.0
+offset_right = 224.0
+offset_bottom = 411.0
+fill_mode = 3
+
+[node name="pb_glc4" type="ProgressBar" parent="CanvasLayer/pbs_glc"]
+offset_left = 240.0
+offset_top = 128.0
+offset_right = 296.0
+offset_bottom = 411.0
+fill_mode = 3
+
+[node name="pb_glc5" type="ProgressBar" parent="CanvasLayer/pbs_glc"]
+offset_left = 312.0
+offset_top = 128.0
+offset_right = 368.0
+offset_bottom = 411.0
+fill_mode = 3
+
+[node name="pb_glc6" type="ProgressBar" parent="CanvasLayer/pbs_glc"]
+offset_left = 384.0
+offset_top = 128.0
+offset_right = 440.0
+offset_bottom = 411.0
+fill_mode = 3
+
+[node name="lbls_glc" type="Node" parent="CanvasLayer"]
+
+[node name="Label" type="Label" parent="CanvasLayer/lbls_glc"]
+offset_left = 24.0
+offset_top = 424.0
+offset_right = 79.0
+offset_bottom = 447.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ompfq")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer/lbls_glc"]
+offset_left = 96.0
+offset_top = 424.0
+offset_right = 151.0
+offset_bottom = 447.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ompfq")
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="CanvasLayer/lbls_glc"]
+offset_left = 168.0
+offset_top = 424.0
+offset_right = 223.0
+offset_bottom = 447.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ompfq")
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="CanvasLayer/lbls_glc"]
+offset_left = 240.0
+offset_top = 424.0
+offset_right = 295.0
+offset_bottom = 447.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ompfq")
+horizontal_alignment = 1
+
+[node name="Label5" type="Label" parent="CanvasLayer/lbls_glc"]
+offset_left = 312.0
+offset_top = 424.0
+offset_right = 367.0
+offset_bottom = 447.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ompfq")
+horizontal_alignment = 1
+
+[node name="Label6" type="Label" parent="CanvasLayer/lbls_glc"]
+offset_left = 384.0
+offset_top = 424.0
+offset_right = 439.0
+offset_bottom = 447.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ompfq")
+horizontal_alignment = 1
+
+[node name="LabelGPC" type="Label" parent="CanvasLayer"]
+offset_left = 720.0
+offset_top = 48.0
+offset_right = 1120.0
+offset_bottom = 112.0
+text = "Generador permutado
+Congruencial"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="pbs_gpc" type="Node" parent="CanvasLayer"]
+
+[node name="pb_gpc1" type="ProgressBar" parent="CanvasLayer/pbs_gpc"]
+offset_left = 712.0
+offset_top = 128.0
+offset_right = 768.0
+offset_bottom = 411.0
+fill_mode = 3
+
+[node name="pb_gpc2" type="ProgressBar" parent="CanvasLayer/pbs_gpc"]
+offset_left = 784.0
+offset_top = 128.0
+offset_right = 840.0
+offset_bottom = 411.0
+fill_mode = 3
+
+[node name="pb_gpc3" type="ProgressBar" parent="CanvasLayer/pbs_gpc"]
+offset_left = 856.0
+offset_top = 128.0
+offset_right = 912.0
+offset_bottom = 411.0
+fill_mode = 3
+
+[node name="pb_gpc4" type="ProgressBar" parent="CanvasLayer/pbs_gpc"]
+offset_left = 928.0
+offset_top = 128.0
+offset_right = 984.0
+offset_bottom = 411.0
+fill_mode = 3
+
+[node name="pb_gpc5" type="ProgressBar" parent="CanvasLayer/pbs_gpc"]
+offset_left = 1000.0
+offset_top = 128.0
+offset_right = 1056.0
+offset_bottom = 411.0
+fill_mode = 3
+
+[node name="pb_gpc6" type="ProgressBar" parent="CanvasLayer/pbs_gpc"]
+offset_left = 1072.0
+offset_top = 128.0
+offset_right = 1128.0
+offset_bottom = 411.0
+fill_mode = 3
+
+[node name="lbls_gpc" type="Node" parent="CanvasLayer"]
+
+[node name="Label" type="Label" parent="CanvasLayer/lbls_gpc"]
+offset_left = 712.0
+offset_top = 424.0
+offset_right = 767.0
+offset_bottom = 447.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ompfq")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer/lbls_gpc"]
+offset_left = 784.0
+offset_top = 424.0
+offset_right = 839.0
+offset_bottom = 447.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ompfq")
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="CanvasLayer/lbls_gpc"]
+offset_left = 856.0
+offset_top = 424.0
+offset_right = 911.0
+offset_bottom = 447.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ompfq")
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="CanvasLayer/lbls_gpc"]
+offset_left = 928.0
+offset_top = 424.0
+offset_right = 983.0
+offset_bottom = 447.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ompfq")
+horizontal_alignment = 1
+
+[node name="Label5" type="Label" parent="CanvasLayer/lbls_gpc"]
+offset_left = 1000.0
+offset_top = 424.0
+offset_right = 1055.0
+offset_bottom = 447.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ompfq")
+horizontal_alignment = 1
+
+[node name="Label6" type="Label" parent="CanvasLayer/lbls_gpc"]
+offset_left = 1072.0
+offset_top = 424.0
+offset_right = 1127.0
+offset_bottom = 447.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ompfq")
+horizontal_alignment = 1
+
+[connection signal="pressed" from="CanvasLayer/ButtonComparar" to="." method="_on_button_comparar_pressed"]
