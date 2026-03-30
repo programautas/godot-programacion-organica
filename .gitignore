@@ -1,0 +1,5 @@
+# Ignora CUALQUIER carpeta llamada .godot en cualquier subdirectorio
+**/.godot/
+
+# Ignora CUALQUIER archivo .import en cualquier lugar del repo
+**/*.import
